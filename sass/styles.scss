@@ -1,0 +1,81 @@
+@use 'variables' as v;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: v.$very-dark-blue-main-bg;
+  font-family: v.$font-family-outfit;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: v.$very-dark-blue-card-bg;
+  width: min(90%, 350px);
+  padding: 1.5rem;
+  gap: 21px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15),
+    0px 4px 4px rgba(0, 0, 0, 0.3);
+  &__title {
+    color: v.$white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  &__text {
+    color: v.$soft-blue;
+    font-size: v.$font-size-paragraph;
+    font-weight: 300;
+    margin: 0;
+  }
+  &__product-data {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    font-weight: 600;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: v.$cyan;
+    font-size: 1rem;
+  }
+  &__time-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: v.$soft-blue;
+    font-size: 1rem;
+  }
+  &__creator-data {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: v.$soft-blue;
+    font-size: 0.875rem;
+    border-top: 1px solid v.$very-dark-blue-line;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+    .avatar {
+      width: 30px;
+      border-radius: 50%;
+      border: 1px solid v.$white;
+    }
+    span {
+      color: v.$white;
+    }
+  }
+}

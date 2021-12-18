@@ -1,0 +1,82 @@
+/* Colors */
+/* Typography */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0d192b;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #14253d;
+  width: min(90%, 350px);
+  padding: 1.5rem;
+  gap: 21px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.card__title {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+.card__text {
+  color: #8bacda;
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin: 0;
+}
+.card__product-data {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  font-weight: 600;
+}
+.card__price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #00fff7;
+  font-size: 1rem;
+}
+.card__time-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #8bacda;
+  font-size: 1rem;
+}
+.card__creator-data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #8bacda;
+  font-size: 0.875rem;
+  border-top: 1px solid #2f415b;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+}
+.card__creator-data .avatar {
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.card__creator-data span {
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
