@@ -23,15 +23,43 @@ body {
   background-color: v.$very-dark-blue-card-bg;
   width: min(90%, 350px);
   padding: 1.5rem;
-  gap: 21px;
+  gap: 22px;
   border-radius: 16px;
   box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15),
     0px 4px 4px rgba(0, 0, 0, 0.3);
+  &__image {
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    &:hover::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(v.$cyan, 0.5);
+      background-image: url(../images/icon-view.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
   &__title {
-    color: v.$white;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 0;
+    a {
+      color: v.$white;
+      text-decoration: none;
+      &:hover {
+        color: v.$cyan;
+      }
+    }
   }
   &__text {
     color: v.$soft-blue;
@@ -67,15 +95,18 @@ body {
     font-size: 0.875rem;
     border-top: 1px solid v.$very-dark-blue-line;
     padding-top: 1rem;
-    padding-bottom: 0.5rem;
     font-weight: 400;
     .avatar {
       width: 30px;
       border-radius: 50%;
       border: 1px solid v.$white;
     }
-    span {
+    a {
       color: v.$white;
+      text-decoration: none;
+      &:hover {
+        color: v.$cyan;
+      }
     }
   }
 }
